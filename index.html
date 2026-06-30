@@ -22,12 +22,13 @@
 
   html { scroll-behavior: smooth; }
 
-  body {
+    body {
     font-family: 'Space Grotesk', sans-serif;
     background: #ffffff;
     color: #222;
     overflow-x: hidden;
-  }
+}
+  
 
   /* NAV */
   nav {
@@ -70,15 +71,23 @@
   nav ul li a:hover { color: var(--primary); }
 
   /* HERO */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 8rem 2rem 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 4rem;
-  }
+  .hero h1,
+.section-title,
+.timeline-title,
+.project-title,
+.edu-degree,
+.contact-link {
+    color: #222;
+}
+
+.hero-tagline,
+.about-text p,
+.timeline-desc,
+.project-desc,
+.contact-text p,
+footer {
+    color: #555;
+}
 
   .hero-text { flex: 1; }
 
@@ -778,12 +787,6 @@
       <div class="edu-degree">EV Basic Training</div>
       <div class="edu-institution">Torchbearers Institute</div>
       <div class="edu-year">Certificate</div>
-    </div>
-    <div class="edu-card">
-      <div class="edu-degree">MSc Renewable Energy Engineering (In View)</div>
-
-      <div class="edu-year">Commonwealth Scholarship Application</div>
-    </div>
   </div>
 </section>
 
